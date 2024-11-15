@@ -1,0 +1,146 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+ul {
+    margin: 0;
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+.container {
+    min-width: 296px;
+    width: 296px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.logo-container {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.logo {
+    background-color: #79A6C0;
+    padding: 5px 16.5px;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    align-items: center;
+    border-radius: 3px; /* добавила бордер радиус */
+}
+
+/* MAIN */
+
+/* FIRST PART */
+
+/* .first-part-container{
+    display: flex;
+} */
+
+img {
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+video{
+    border-radius: 10px;
+}
+
+.item-description {
+    display: flex;
+    width: 122.65px;
+}
+
+.item-description-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.description{
+    margin-top: 16px;
+    line-height: 150%;
+    font-size: small; /* Добавила чтоб разъехался текст*/
+    margin-bottom: 0;
+}
+
+.description-title {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.5px;
+    justify-content: center;
+    width: 122.65px;
+    margin: 0;
+}
+
+.deth-date {
+    display: flex;
+    width: 122.65px;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    justify-content: center;
+}
+
+/* SECOND PART */
+
+.second-item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+/* PART WITH VIDEO */
+
+.video-container{
+    margin-bottom: 54px;
+}
+
+.video-description{
+    margin-top: 22px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #E1B3A1;
+    height: 130px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    margin-top: 16px;
+}
+
+.media-links{
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-media-list{
+    display: flex;
+    gap: 14px;
+    padding: 0;
+    height: 24px;
+    margin-top: 16px;
+}
+
