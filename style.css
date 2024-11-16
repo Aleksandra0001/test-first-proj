@@ -1,6 +1,10 @@
 body {
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif;  */
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #ffffff;
+    background-image: url(./img/bg-beige2.jpg);
     color: #000000;
 }
 
@@ -23,12 +27,20 @@ a {
     margin: 0 auto;
 }
 
+.first-part-title, .second-part-title, .third-part-title{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 /* HEADER */
 
-.logo-container {
+/* FOR .logo */
+/* .logo-container {
     padding-top: 21px;
     padding-bottom: 21px;
-}
+} */
 
 .logo {
     background-color: #79A6C0;
@@ -39,9 +51,11 @@ a {
     font-weight: 400;
     line-height: 14.52px;
     align-items: center;
-    border-radius: 3px; /* добавила бордер радиус */
-}
+    border-radius: 3px;} /* добавила бордер радиус */
 
+.logo-img{
+    box-shadow: none;
+}
 /* MAIN */
 
 /* FIRST PART */
@@ -68,19 +82,25 @@ video{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    justify-content: center;
 }
 
 .description{
     margin-top: 16px;
     line-height: 150%;
-    font-size: small; /* Добавила чтоб разъехался текст*/
+    font-size: 12px;
     margin-bottom: 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid honeydew;
 }
 
 .description-title {
     display: flex;
-    font-weight: 400;
-    font-size: 20px;
+    /* font-weight: 400;
+    font-size: 18px; */
+    font-weight: 500;
+    font-size: 16px;
     line-height: 24.5px;
     justify-content: center;
     width: 122.65px;
@@ -90,7 +110,7 @@ video{
 .deth-date {
     display: flex;
     width: 122.65px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     margin: 0;
     justify-content: center;
@@ -103,6 +123,18 @@ video{
     flex-direction: column;
     justify-content: center;
     margin-top: 24px;
+}
+
+.list-of-kredo {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: 1px solid honeydew;
 }
 
 /* PART WITH VIDEO */
@@ -118,13 +150,14 @@ video{
 /* FOOTER */
 
 footer{
-    background-color: #E1B3A1;
+    background-color: rgba(255, 255, 255, 0.35);
     height: 130px;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo{
