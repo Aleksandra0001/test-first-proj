@@ -93,6 +93,7 @@ video{
     text-align: center;
     border-radius: 10px;
     border: 1px solid honeydew;
+    padding: 12px;
 }
 
 .description-title {
@@ -135,6 +136,7 @@ video{
     margin-top: 16px;
     border-radius: 10px;
     border: 1px solid honeydew;
+    padding: 12px;
 }
 
 /* PART WITH VIDEO */
