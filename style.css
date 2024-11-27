@@ -1,10 +1,13 @@
 body {
-    /* font-family: "Inter", sans-serif;  */
-    font-family: "Playfair Display SC", serif;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     background-color: #ffffff;
-    background-image: url(./img/bg-beige2.jpg);
+    background-image: url(./img/bg_mramor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #000000;
 }
 
@@ -28,30 +31,20 @@ a {
 }
 
 .first-part-title, .second-part-title, .third-part-title{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
 }
 
 /* HEADER */
 
 /* FOR .logo */
-/* .logo-container {
-    padding-top: 21px;
-    padding-bottom: 21px;
-} */
-
-.logo {
-    background-color: #79A6C0;
-    padding: 5px 16.5px;
-    display: inline-flex;
+.logo-container {
+    display: flex;
     justify-content: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.52px;
-    align-items: center;
-    border-radius: 3px;} /* добавила бордер радиус */
+    margin-top: 14px;
+}
 
 .logo-img{
     box-shadow: none;
@@ -60,13 +53,14 @@ a {
 
 /* FIRST PART */
 
-/* .first-part-container{
+.first-part-container{
     display: flex;
-} */
+    flex-direction: column;
+}
 
 img {
     border-radius: 10px;
-    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /* box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25); */
 }
 
 video{
@@ -75,46 +69,60 @@ video{
 
 .item-description {
     display: flex;
-    width: 122.65px;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 .item-description-container{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
     justify-content: center;
-}
-
-.description{
-    margin-top: 16px;
-    line-height: 150%;
-    font-size: 12px;
-    margin-bottom: 0;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid honeydew;
-    padding: 12px;
 }
 
 .description-title {
     display: flex;
-    /* font-weight: 400;
-    font-size: 18px; */
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24.5px;
+    font-weight: 600;
+    font-size: 24px;
     justify-content: center;
-    width: 122.65px;
     margin: 0;
 }
 
-.deth-date {
+.position {
     display: flex;
-    width: 122.65px;
-    font-size: 13px;
+    font-size: 16px;
+    letter-spacing: 0.06em;
     font-weight: 400;
     margin: 0;
     justify-content: center;
+}
+
+.photo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: rgba(125, 154, 206, 0.28);
+    border-radius: 16px;
+}
+
+.deth-description{
+    width: 238px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.description-childhood {
+    margin-top: 24px;
+    line-height: 140.2%;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: left;
+    width: 272px;
 }
 
 /* SECOND PART */
@@ -124,6 +132,33 @@ video{
     flex-direction: column;
     justify-content: center;
     margin-top: 24px;
+}
+
+.images-container {
+    display: flex;
+    height: 188px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.second-img,
+.third-img {
+    flex-shrink: 0;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.second-img:hover,
+.third-img:hover {
+    transform: scale(1.3);
+    z-index: 10;
+}
+
+.third-img {
+    position: relative;
+    top: 39px;
+    right: 35px;
 }
 
 .list-of-kredo {
@@ -178,4 +213,3 @@ footer{
     height: 24px;
     margin-top: 16px;
 }
-
